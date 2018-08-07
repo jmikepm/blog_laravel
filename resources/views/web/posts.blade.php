@@ -14,6 +14,7 @@
                         <img src="{{ $post->file }}" alt="" class="img-fluid">
                     @endif
                     {{ $post->excerpt }}
+                    <br>
                     <a href="{{ route('post', $post->slug) }} " class="pull-right">Leer mas</a>
                 </div>
             </div>

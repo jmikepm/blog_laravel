@@ -16,7 +16,7 @@
                     @endif
                     {{ $post->excerpt }}
                    <hr>
-                   {{!! $post->body !!}
+                   {!! $post->body !!}
                    <hr>
                    Etiquetas
                    @foreach($post->tags as $tag)
