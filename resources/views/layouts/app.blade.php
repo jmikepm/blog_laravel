@@ -17,7 +17,7 @@
     <div id="app" class="container">
 
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="{{ url('/') }}">
+            <a class="navbar-brand" href="{{ route('site') }}">
                         {{ config('app.name', 'Laravel') }}
             </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -91,11 +91,12 @@
                 </div>
             </div>
         @endif
-
+    
         @yield('content')
         
     </div>
-
+     <footer class="fixed-bottom text-center bg-dark text-white py-2 px-2">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+    
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>
     @yield('scripts')

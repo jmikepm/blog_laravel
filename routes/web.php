@@ -11,11 +11,12 @@
 |
 */
 
-Route::redirect('/', 'blog');
+Route::redirect('/', 'site');
 
 Auth::routes();
 
 //web
+Route::get('/site', 'Web\SiteController@site')->name('site');
 Route::get('/blog', 'Web\PageController@blog')->name('blog');
 Route::get('entrada/{slug}', 'Web\PageController@post')->name('post');
 
