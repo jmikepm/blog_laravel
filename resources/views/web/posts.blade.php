@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-    <div class="container justify-content-md-center align-items-center">
+    <div class="container justify-content-md-center align-items-center pb-5">
         <div class="col-md-8 col-md-offset-2 align-items-center justify-content-center my-0 mx-auto">
         <h1>Lista de articulos </h1>
         @foreach($posts as $post)

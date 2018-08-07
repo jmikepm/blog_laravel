@@ -1,12 +1,21 @@
 @extends('layouts.app')
+<div class="container">
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100 img-fluid" style="height: 300px;" src="{{ asset('image/head.jpg') }}" alt="First slide">
+          <div class="carousel-caption  d-md-block">
+            <h2>Miguel Peña </h2> 
+            <h4>Desarrollador Web / Ing. En Sistemas Computacionales</h4>   
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
 @section('content')
     <div class="container justify-content-md-center align-items-center pb-6">
-        <div class="col-md-8 col-md-offset-2 align-items-center justify-content-center my-0 mx-auto">
-            <hr>
-        <h1 class="my-0 mx-auto text-center">Bienvenidos </h1>
-        </div>
-        <div class="container">
-            
+        
+        <div class="container mt-4">
              <div class="row">
                     <div class=" col-md-4">
                         <img src="{{ asset('image/me.png') }}" alt="" class=" img-fluid float-left align-middle">
@@ -19,11 +28,9 @@
                 </div>
         </div>
         
-        
-         
         <div class="row my-5">
             @foreach($posts as $post)
-            <div class="col-md-4 d-inline">
+            <div class="col-lg-4 d-inline">
                 <div class="card " style="width: 18rem;">
                       @if($post->file)
                         <img src="{{ $post->file }}" alt="" class="card-img-top">
