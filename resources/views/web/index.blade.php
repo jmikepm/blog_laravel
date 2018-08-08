@@ -27,7 +27,9 @@
                     </div>
                 </div>
         </div>
-        
+        <div class="container skill justify-content-md-center align-items-center">
+            <h1>SKILL</h1>
+        </div>
         <div class="row my-5">
             @foreach($posts as $post)
             <div class="col-lg-4 d-inline">
