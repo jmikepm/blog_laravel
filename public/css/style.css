@@ -1,0 +1,10 @@
+.work { display: inline-block; }
+.info>.infolist{ background-color: transparent; border: none; padding: .10rem 0.25rem; }
+.social { font-size: 25px; color: #fff!important; }
+.listsocial{ flex-direction: inherit; }
+ion-icon:hover{
+	/*background: #000;*/
+	color: #543033!important;
+    border-radius: 25px;
+    transition-duration: 1s;
+}

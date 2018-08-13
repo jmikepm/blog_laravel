@@ -12,6 +12,7 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/style.css') }}" rel="stylesheet">
 </head>
 <body>
     <div id="app" class="container">
@@ -63,7 +64,6 @@
           </div>
         </nav>
 
-
         @if (session('info'))
             <div class="container">
                 <div class="row">
@@ -95,10 +95,11 @@
         @yield('content')
         
     </div>
-     <footer class="fixed-bottom text-center bg-dark text-white py-2 px-2">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+     <footer class="fixed-bottom text-center bg-dark text-white py-2 px-2">© 2018 Copyright: Mike Peña</cite></footer>
     
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>
+    <script src="https://unpkg.com/ionicons@4.3.0/dist/ionicons.js"></script>
     @yield('scripts')
 </body>
 </html>
